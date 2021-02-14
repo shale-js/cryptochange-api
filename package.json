@@ -1,0 +1,56 @@
+{
+  "name": "cryptochange-api",
+  "version": "1.0.0",
+  "description": "Obtener valor de criptomonedas en base a USD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:create": "sequelize-cli db:create",
+    "db:g:migration": "sequelize-cli migration:generate --name",
+    "db:g:seed": "sequelize-cli seed:generate --name",
+    "db:seed": "sequelize-cli db:seed",
+    "db:seeds": "sequelize-cli db:seed:all",
+    "db:u:seed": "sequelize-cli db:seed:undo",
+    "db:u:seeds": "sequelize-cli db:seed:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shal-js/cryptochange-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "cryptocurrency",
+    "api"
+  ],
+  "author": "Sherman Vera <vera8german@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shal-js/cryptochange-api/issues"
+  },
+  "homepage": "https://github.com/shal-js/cryptochange-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
